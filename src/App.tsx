@@ -1,8 +1,10 @@
+import Main from './components/Main'
+
 function App() {
   return (
-    <>
-      Hello, React & TypeScript App!
-    </>
+    <div>
+        <Main />
+    </div>
   )
 }
 
