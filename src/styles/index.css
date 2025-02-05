@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 * {
   box-sizing: border-box;
 }
@@ -47,17 +49,47 @@ main {
 }
 
 .main--title {
-  margin: 0;
+  margin-bottom: 20px;
   font-size: 39px;
   letter-spacing: -0.05em;
+  font-weight: 600;
+  background: linear-gradient(90deg, #61dafb, #6a5acd);
+  background-clip: text; 
+  -webkit-background-clip: text; /* For WebKit-based browsers */
+  color: transparent; /* Make the text color transparent for background to show */
+  -webkit-text-fill-color: transparent; /* For WebKit-based browsers */
+}
+
+/* Fallback: If text gradient isn't supported, apply solid color or another effect */
+.text-gradient.no-gradient {
+  background: none;
+  color: #6a5acd; /* Fallback text color */
+}
+
+.main--subtitle{
+  margin-top: 20px;
+  font-size: 30px;
+  letter-spacing: -0.05em;
+  font-weight: 600;
+  color: #DEEBF8;
+}
+
+.fact-sections section {
+  border: 2px solid #61dafb;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
 }
 
 .main--facts {
   margin-top: 46px;
+  padding-left: 40px;
   max-width: 400px;
 }
 
 .main--facts > li {
+  color: #f8fbff;
   line-height: 19px;
   padding-block: 10px;
 }
